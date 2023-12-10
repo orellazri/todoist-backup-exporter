@@ -4,6 +4,8 @@
 
 This project allows you to export your last Todoist backup to a zip file.
 
+[![Build and Push Docker Image](https://github.com/orellazri/todoist-backup-exporter/actions/workflows/release.yml/badge.svg)](https://github.com/orellazri/todoist-backup-exporter/actions/workflows/release.yml)
+
 </div>
 
 ## Running
