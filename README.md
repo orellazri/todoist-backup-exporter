@@ -32,10 +32,10 @@ go run .
 
 ## Environment variables
 
-| Required | Name                       | Description                                         | Default value |
-| -------- | -------------------------- | --------------------------------------------------- | ------------- |
-| Yes      | TODOIST_TOKEN              | Your Todoist API token                              |               |
-| No       | DEST_DIR                   | Destination directory to download the file to       | /exports      |
-| No       | DEST_FILENAME_INCLUDE_DATE | Whether to include the backup date in the file name | false         |
+| Required | Name                       | Description                                                                                    | Default value |
+| -------- | -------------------------- | ---------------------------------------------------------------------------------------------- | ------------- |
+| Yes      | TODOIST_TOKEN              | Your Todoist API token                                                                         |               |
+| No       | DEST_DIR                   | Destination directory to download the file to (Don't need to change if running in a container) | /exports      |
+| No       | DEST_FILENAME_INCLUDE_DATE | Whether to include the backup date in the file name                                            | false         |
 
 To get the Todoist API token, go to [Todoist Integrations](https://todoist.com/prefs/integrations), click the "Developer" tab and copy the token from the API token section.
