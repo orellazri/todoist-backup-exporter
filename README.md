@@ -2,7 +2,7 @@
 
 # Todoist Backup Exporter
 
-This project allows your to exports your last Todoist backup to a zip file.
+This project allows you to export your last Todoist backup to a zip file.
 
 </div>
 
