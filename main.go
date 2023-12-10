@@ -18,7 +18,7 @@ type BackupResponse struct {
 
 func main() {
 	// Parse environment variables
-	token := os.Getenv("")
+	token := os.Getenv("TODOIST_TOKEN")
 	if len(token) == 0 {
 		log.Fatal("TODOIST_TOKEN must be set")
 	}
