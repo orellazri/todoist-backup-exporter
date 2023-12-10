@@ -1,6 +1,10 @@
+<div align="center">
+
 # Todoist Backup Exporter
 
 This project allows your to exports your last Todoist backup to a zip file.
+
+</div>
 
 ## Running
 
