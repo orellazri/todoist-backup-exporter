@@ -25,7 +25,7 @@ func main() {
 
 	destDir := os.Getenv("DEST_DIR")
 	if len(destDir) == 0 {
-		destDir = "."
+		destDir = "/exports"
 	}
 
 	destFilenameIncludeDate := os.Getenv("DEST_FILENAME_INCLUDE_DATE") == "true"
