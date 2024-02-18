@@ -1,6 +1,7 @@
 package main
 
 import (
+	"compress/gzip"
 	"encoding/json"
 	"fmt"
 	"io"
@@ -81,7 +82,16 @@ func main() {
 		log.Fatalf("Failed to create output file: %s", err)
 	}
 	defer out.Close()
-	if _, err := io.Copy(out, resp.Body); err != nil {
+
+	gw := gzip.NewWriter(out)
+	defer func() {
+		if err := gw.Close(); err != nil {
+			log.Fatalf("Failed to close gzip writer: %s", err)
+		}
+	}()
+
+	_, err = io.Copy(gw, resp.Body)
+	if err != nil {
 		log.Fatalf("Failed to write response to output file: %s", err)
 	}
 
