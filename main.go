@@ -32,7 +32,7 @@ func main() {
 
 	// Get list of backups
 	client := &http.Client{}
-	req, err := http.NewRequest("GET", "https://api.todoist.com/sync/v9/backups/get", nil)
+	req, err := http.NewRequest("GET", "https://api.todoist.com/api/v1/backups", nil)
 	if err != nil {
 		log.Fatalf("Failed to create request: %s", err)
 	}
